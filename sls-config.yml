@@ -1,0 +1,22 @@
+dev:
+  lambdaRole: 'PatchAutomationExecutionRole'
+  lambdaAccountId: '123456789012'
+  xRoleName: 'PatchTargetReadOnly'
+  xRoleAccountId: '123456789012'
+  awsRegion: 'us-east-1'
+  snsNotificationTopic: 'arn:aws:sns:us-east-1:123456789012:sls-notification'
+prod:
+  lambdaRole: 'PatchAutomationExecutionRole'
+  lambdaAccountId: '123456789012'
+  xRoleName: 'PatchTargetReadOnly'
+  xRoleAccountId: '123456789012'
+  awsRegion: 'us-east-1'
+  snsNotificationTopic: 'arn:aws:sns:us-east-1:123456789012:sls-notification'
+local:
+  lambdaRole: 'PatchAutomationExecutionRole'
+  lambdaAccountId: '123456789012'
+  xRoleName: 'PatchTargetReadOnly'
+  xRoleAccountId: '123456789012'
+  awsRegion: 'us-east-1'
+  snsNotificationTopic: 'arn:aws:sns:us-east-1:123456789012:sls-notification'
+
