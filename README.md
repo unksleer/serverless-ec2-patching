@@ -29,3 +29,6 @@ arn:aws:lambda:[REGION]:[ACCOUNT]:function:ssm-patch-dev-ec2-poller
 
 SSMStepFunction
 
+## Configuration
+
+Account ids, role names and the SNS topic in `sls-config.yml` and the state machine role in `serverless.yml` are placeholders (`123456789012` is the AWS documentation example account). Set them per stage before deploying; the Lambda execution role needs `ssm:SendCommand`, `ssm:ListCommandInvocations`, `ec2:StartInstances`, `ec2:StopInstances`, `ec2:DescribeInstanceStatus` and `sns:Publish`, and the Step Functions role needs `lambda:InvokeFunction` on the five functions.
